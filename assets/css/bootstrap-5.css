@@ -11757,7 +11757,12 @@ a.theme-btn-on-bg:hover, a.theme-btn-on-bg:focus, a.theme-btn-on-bg:active, .the
 .resume-wrapper-inner {
   max-width: 1000px;
 }
-
+  header {
+background: linear-gradient(to bottom, #000000, #1a1a1a);
+color: #ffffff;
+padding: 20px 0;
+text-align: center;
+}
 .resume-header {
   background: #59578E;
   color: rgba(255, 255, 255, 0.9);
@@ -11825,15 +11830,16 @@ a.theme-btn-on-bg:hover, a.theme-btn-on-bg:focus, a.theme-btn-on-bg:active, .the
 }
 
 .resume-timeline:before {
-  content: "";
-  display: inline-block;
-  width: 3px;
-  height: 100%;
-  background: #d0cfe2;
-  left: 6px;
-  top: 4px;
-  position: absolute;
+    content: "";
+    position: absolute;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: #FF6B32;
+    border-radius: 20px;
 }
+
 
 .resume-timeline-item:before {
   content: "";
@@ -11843,7 +11849,7 @@ a.theme-btn-on-bg:hover, a.theme-btn-on-bg:focus, a.theme-btn-on-bg:active, .the
   top: 3px;
   width: 15px;
   height: 15px;
-  border: 4px solid #7270a8;
+  border: 4px solid #FF6B32;
   background: white;
   border-radius: 50%;
 }
@@ -11939,4 +11945,160 @@ a.theme-btn-on-bg:hover, a.theme-btn-on-bg:focus, a.theme-btn-on-bg:active, .the
   border: 1px solid rgba(var(--bs-black-rgb), var(--bs-bg-opacity));
   background-color: rgba(var(--bs-white-rgb), var(--bs-bg-opacity));
   margin: 2em auto;
+}
+
+/* ============================
+   PALETA DE CORES 
+   Inspirada no álbum "The Slow Rush"
+   ============================ */
+:root {
+    --slowrush-orange: #E54819;
+    --slowrush-sand: #F2A074;
+    --slowrush-dark: #0D0D0D;
+    --slowrush-shadow: rgba(0, 0, 0, 0.4);
+}
+
+/* ============================
+   BODY / LAYOUT
+   ============================ */
+body {
+    background: radial-gradient(circle at top, var(--slowrush-orange), var(--slowrush-dark) 80%);
+    font-family: "Roboto", sans-serif;
+    color: #fff;
+}
+
+/* Wrapper branco do currículo */
+.resume-wrapper-inner {
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(6px);
+    border-radius: 25px;
+    box-shadow: 0 0 25px var(--slowrush-shadow);
+}
+
+/* ============================
+   HEADER
+   ============================ */
+.resume-header {
+    background: linear-gradient(135deg, var(--slowrush-orange), var(--slowrush-dark) 70%);
+    border-radius: 25px 25px 0 0;
+    padding: 30px;
+    color: white;
+    box-shadow: inset 0 0 40px rgba(0,0,0,0.3);
+}
+
+/* Nome */
+.resume-header .name {
+    font-weight: 900;
+    letter-spacing: 2px;
+    font-size: 2.2rem;
+}
+
+/* Foto */
+.picture {
+    border-radius: 50%;
+    border: 4px solid var(--slowrush-sand);
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+/* ============================
+   TÍTULOS DE SEÇÃO
+   ============================ */
+.resume-section-title {
+    color: var(--slowrush-orange);
+    font-weight: 800;
+    border-bottom: 2px solid var(--slowrush-sand);
+}
+
+/* ============================
+   BOTÃO
+   ============================ */
+.btn {
+    background: var(--slowrush-orange);
+    color: white;
+    border-radius: 50px;
+    padding: 10px 25px;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: var(--slowrush-sand);
+    transform: translateY(-2px);
+}
+
+/* ============================
+   TIMELINE / CARDS
+   ============================ */
+.resume-timeline-item {
+    border-left: 3px solid var(--slowrush-orange);
+    padding-left: 20px;
+    margin-bottom: 40px;
+}
+
+.resume-timeline-item h3 {
+    color: var(--slowrush-sand);
+}
+
+/* ============================
+   BADGES 
+   ============================ */
+.badge.bg-secondary,
+.badge-light {
+    background: var(--slowrush-dark) !important;
+    color: var(--slowrush-sand);
+    border-radius: 20px;
+    padding: 6px 12px;
+}
+
+/* ============================
+   SKILLS - BARRAS DE PROGRESSO
+   ============================ */
+.progress {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+}
+
+.progress-bar {
+    background: linear-gradient(90deg, var(--slowrush-orange), var(--slowrush-sand));
+    border-radius: 20px;
+}
+
+/* ============================
+   LINKS
+   ============================ */
+.text-link, 
+.resume-social a {
+    color: var(--slowrush-sand);
+    transition: 0.3s;
+}
+
+.text-link:hover {
+    color: var(--slowrush-orange);
+}
+
+/* ============================
+   SIDEBAR (direita)
+   ============================ */
+.col-lg-3 {
+    background: rgba(0, 0, 0, 0.2);
+    border-left: 1px solid rgba(255,255,255,0.08);
+    padding: 20px;
+    border-radius: 0 0 25px 0;
+}
+
+.rounded-divider {
+    width: 85%;
+    height: 14px;
+    margin: 40px auto 60px;
+    border-radius: 999px;
+    background: linear-gradient(
+        90deg,
+        rgba(255,110,40,0.9),
+        rgba(255,110,40,0.5),
+        rgba(0,0,0,0.7)
+    );
+    box-shadow:
+        0 0 10px rgba(255,110,40,0.5),
+        0 0 25px rgba(0,0,0,0.6);
+    opacity: 0.9;
 }

@@ -1,0 +1,97 @@
+/* ==== HEADER ARREDONDADO ==== */
+.resume-header {
+    background: linear-gradient(135deg, #4b0082, #8a2be2, #e100ff);
+    color: white;
+    border-radius: 0 0 35px 35px;
+    padding-bottom: 2rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+}
+
+/* Foto redonda com borda neon */
+.picture {
+    border-radius: 50%;
+    border: 4px solid #ff00ff;
+    box-shadow: 0 0 15px #ff00ff;
+}
+
+/* ==== BOTÕES ESTILO CURRENTS ==== */
+.btn {
+    background: linear-gradient(135deg, #ff00ff, #8a2be2);
+    color: white !important;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #e700ff;
+}
+
+/* ==== TÍTULOS E TEXTOS ==== */
+.resume-section-title {
+    color: #4b0082;
+    border-bottom: 2px solid #e100ff;
+}
+
+.name {
+    text-shadow: 0 0 10px #e100ff;
+}
+
+.title {
+    font-weight: 600;
+    color: #ffd6ff;
+}
+
+/* ==== BADGES ==== */
+.badge {
+    background: linear-gradient(135deg, #4b0082, #e100ff);
+    color: white;
+    border-radius: 12px;
+    padding: 6px 12px;
+    box-shadow: 0 0 10px rgba(225,0,255,0.5);
+}
+
+/* ==== TIMELINE ==== */
+.resume-timeline:before {
+    background: linear-gradient(#ff00ff, #4b0082);
+}
+
+.resume-timeline-item:before {
+    background-color: #e100ff;
+    box-shadow: 0 0 10px #e100ff;
+}
+
+/* ==== CAIXAS DE CONTEÚDO ==== */
+.resume-wrapper-inner {
+    background: #ffffff;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.resume-section {
+    border-left: 3px solid #e100ff20;
+    padding-left: 15px;
+}
+
+/* ==== PROGRESS BARS ==== */
+.progress-bar {
+    background: linear-gradient(90deg, #e100ff, #8a2be2);
+    box-shadow: 0 0 10px #ff00ff;
+}
+
+/* ==== LINKS ==== */
+.text-link {
+    color: #ff7cff !important;
+    text-decoration: none;
+}
+
+.text-link:hover {
+    text-shadow: 0 0 8px #ff00ff;
+}
+
+/* ==== FUNDO DA PÁGINA ==== */
+body {
+    background: radial-gradient(circle, #2b003a, #12001f, #000000);
+}
