@@ -11947,10 +11947,6 @@ text-align: center;
   margin: 2em auto;
 }
 
-/* ============================
-   PALETA DE CORES 
-   Inspirada no álbum "The Slow Rush"
-   ============================ */
 :root {
     --slowrush-orange: #E54819;
     --slowrush-sand: #F2A074;
@@ -11958,16 +11954,12 @@ text-align: center;
     --slowrush-shadow: rgba(0, 0, 0, 0.4);
 }
 
-/* ============================
-   BODY / LAYOUT
-   ============================ */
 body {
     background: radial-gradient(circle at top, var(--slowrush-orange), var(--slowrush-dark) 80%);
     font-family: "Roboto", sans-serif;
     color: #fff;
 }
 
-/* Wrapper branco do currículo */
 .resume-wrapper-inner {
     background: rgba(255, 255, 255, 0.06);
     backdrop-filter: blur(6px);
@@ -11975,9 +11967,6 @@ body {
     box-shadow: 0 0 25px var(--slowrush-shadow);
 }
 
-/* ============================
-   HEADER
-   ============================ */
 .resume-header {
     background: linear-gradient(135deg, var(--slowrush-orange), var(--slowrush-dark) 70%);
     border-radius: 25px 25px 0 0;
@@ -11986,32 +11975,24 @@ body {
     box-shadow: inset 0 0 40px rgba(0,0,0,0.3);
 }
 
-/* Nome */
 .resume-header .name {
     font-weight: 900;
     letter-spacing: 2px;
     font-size: 2.2rem;
 }
 
-/* Foto */
 .picture {
     border-radius: 50%;
     border: 4px solid var(--slowrush-sand);
     box-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
 
-/* ============================
-   TÍTULOS DE SEÇÃO
-   ============================ */
 .resume-section-title {
     color: var(--slowrush-orange);
     font-weight: 800;
     border-bottom: 2px solid var(--slowrush-sand);
 }
 
-/* ============================
-   BOTÃO
-   ============================ */
 .btn {
     background: var(--slowrush-orange);
     color: white;
@@ -12026,9 +12007,6 @@ body {
     transform: translateY(-2px);
 }
 
-/* ============================
-   TIMELINE / CARDS
-   ============================ */
 .resume-timeline-item {
     border-left: 3px solid var(--slowrush-orange);
     padding-left: 20px;
@@ -12039,9 +12017,6 @@ body {
     color: var(--slowrush-sand);
 }
 
-/* ============================
-   BADGES 
-   ============================ */
 .badge.bg-secondary,
 .badge-light {
     background: var(--slowrush-dark) !important;
@@ -12050,9 +12025,6 @@ body {
     padding: 6px 12px;
 }
 
-/* ============================
-   SKILLS - BARRAS DE PROGRESSO
-   ============================ */
 .progress {
     background: rgba(255, 255, 255, 0.1);
     border-radius: 20px;
@@ -12063,9 +12035,7 @@ body {
     border-radius: 20px;
 }
 
-/* ============================
-   LINKS
-   ============================ */
+
 .text-link, 
 .resume-social a {
     color: var(--slowrush-sand);
@@ -12076,9 +12046,7 @@ body {
     color: var(--slowrush-orange);
 }
 
-/* ============================
-   SIDEBAR (direita)
-   ============================ */
+
 .col-lg-3 {
     background: rgba(0, 0, 0, 0.2);
     border-left: 1px solid rgba(255,255,255,0.08);
